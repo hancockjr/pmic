@@ -1,0 +1,115 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+    <div class="center sliding">Team Settings</div>
+    <div class="right"><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a></div>
+  </div>
+</div>
+<div class="pages">
+  <div data-page="team" class="page">
+    <div class="page-content">
+      <div class="content-block-title">Team Settings</div>
+      <form id="form-team" class="list-block inset store-data">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Name</div>
+                <div class="item-input">
+                  <input type="text" name="name" placeholder="Team name" id="team-name"/>
+                </div>
+              </div>
+            </div>
+          </li>
+<!--
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Template</div>
+                <div class="item-input">
+                  <input list="sports" name="template" placeholder="NONE" id="team-template"/>
+                  <datalist id="sports">
+                    <option value="BBALL">
+                    <option value="SOC/LAC">
+                    <option value="BASE">
+                    <option value="FBALL">
+                    <option value="NONE">
+                  </datalist>
+                </div>
+              </div>
+            </div>
+          </li>
+ -->
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"># Players In</div>
+                <div class="item-input">
+                  <input type="number" min="1" max="11" name="nPlayersIn" placeholder="5" id="team-nPlayersIn"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+<!-- http://www.idangero.us/framework7/docs-demos/color-themes-ios.html -->
+<!--
+            <a href="team-color.html" class="item-link">
+              <div class="item-content"> 
+                <div class="item-inner">
+                  <div class="item-title">Color</div>
+                </div>
+              </div>
+            </a>
+ -->
+            <a href="#" class="item-link smart-select" data-open-in="popup"">
+              <select name="sound">
+                <option value="blue" selected>Blue</option>
+                <option value="gray">Gray</option>
+                <option value="black">Black</option>
+                <option value="lightblue">Light Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="green">Green</option>
+                <option value="red">Red</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Color</div>
+                </div>
+              </div>
+            </a>
+
+          </li>
+        </ul>
+      </form>
+      <div class="row content-block">
+        <div class="col-50">
+          <a href="#" class="button button-big button-fill color-red delete-storage-data back link" id="team-deletecancel">Delete Team</a>
+        </div>
+        <div class="col-50">
+          <a href="#" class="button button-big button-fill color-green get-storage-data">Save Settings</a>
+        </div>
+      </div>
+      <div class="content-block">
+        <p><a id="team-roster" href="roster.html" class="button button-big" disabled>Roster</a></p>
+      </div>
+
+<!-- TODO: only display players with valid email/phone -->
+      <div class="content-block">
+        <p><a id="team-contact" href="contact-select.html" class="button button-big" disabled>Contact</a></p>
+      </div>
+<!-- http://stackoverflow.com/questions/4367225/sending-sms-to-mobile-phones-via-javascript -->
+<!-- https://www.tropo.com/docs/scripting/quickstarts/sending-text-messages -->
+
+<!-- http://stackoverflow.com/questions/12301358/send-attachments-with-php-mail -->
+
+<!-- http://stackoverflow.com/questions/7381150/how-to-send-an-email-from-javascript -->
+<!-- window.open('mailto:test@example.com,recipient2@gmail.com?subject=subject&body=body'); -->
+
+      <div class="content-block">
+        <p><a id="team-game" href="game-select.html" class="button button-big" disabled>New Game</a></p>
+      </div>
+    </div>
+  </div>
+</div>

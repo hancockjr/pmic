@@ -1,0 +1,106 @@
+<!-- http://www.idangero.us/framework7/docs/form-storage.html -->
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+    <div class="center sliding">Settings</div>
+    <div class="right">
+      <!-- Right link contains only icon - additional "icon-only" class-->
+      <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+    </div>
+  </div>
+</div>
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="settings" class="page">
+    <!-- Scrollable page content-->
+    <div class="page-content">
+      <div class="content-block-title">Coach's Profile</div>
+      <!--<div class="list-block">-->
+      <div class="list-block inset">
+        <ul>
+          <li><a href="profile.html" class="item-link">
+              <div class="item-content"> 
+                <div class="item-inner">
+                  <div class="item-title">Edit Profile</div>
+                </div>
+              </div></a></li>
+        </ul>
+      </div>
+      <div class="content-block-title">In-Game Settings</div>
+      <form id="settings-options" class="list-block inset store-data">
+        <ul>
+          <li>
+            <label class="label-checkbox item-content">
+              <input type="checkbox" name="enable-demo-team" id="enable-demo-team" onclick="DemoTeamEnable()"/>
+              <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+              <div class="item-inner">
+                <div class="item-title">Create demo team</div>
+              </div>
+            </label>
+          </li>
+          <li>
+            <label class="label-checkbox item-content">
+              <input type="checkbox" name="enable-clock" value="Checkbox1" checked="checked"/>
+              <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+              <div class="item-inner">
+                <div class="item-title">Enable clock</div>
+              </div>
+            </label>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Clock start</div>
+                <div class="item-input">
+                  <input type="text" name="clock" placeholder="05:00" pattern="[0-9]{2}:[0-9]{2}" id="setting-clock"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Fast count</div>
+                <div class="item-input">
+                  <input type="number" min="1" max="60" name="decrement" placeholder="10" id="setting-decrement"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="item-link smart-select" data-open-in="popup"">
+              <select name="swapmode">
+                <option value="cycle" selected>Cycle</option>
+                <option value="manual">Manual</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Default Swap Mode</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item-link smart-select" data-open-in="popup"">
+              <select name="sound">
+                <option value="airhorn" selected>Air Horn</option>
+                <option value="buzzer">Buzzer</option>
+                <option value="whistle">Whistle</option>
+                <option value="none">None</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Clock Expire Sound</div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      <!--</div>-->
+      </form>
+    </div>
+  </div>
+</div>
+</body>

@@ -1,0 +1,81 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+    <div class="center sliding">Player</div>
+    <div class="right"><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a></div>
+  </div>
+</div>
+<div class="pages">
+  <div data-page="player" class="page">
+    <div class="page-content">
+      <div class="content-block-title">Player Profile</div>
+      <form id="form-player" class="list-block inset store-data">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-media"><i class="icon icon-form-name"></i></div>
+              <div class="item-inner"> 
+                <div class="item-title label">Name</div>
+                <div class="item-input">
+                  <input type="text" name="name" placeholder="Player's name" id="player-name"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-media"><i class="icon icon-form-name"></i></div>
+              <div class="item-inner"> 
+                <div class="item-title label">Number</div>
+                <div class="item-input">
+                  <input type="number" name="number" min="0" max="99" placeholder="0" id="player-number"/>
+                </div>
+              </div>
+            </div>
+          </li>
+<!--
+          <li>
+            <div class="item-content">
+              <div class="item-media"><i class="icon icon-form-name"></i></div>
+              <div class="item-inner"> 
+                <div class="item-title label">Position</div>
+                <div class="item-input">
+                  <input type="text" name="position" id="player-position"/>
+                </div>
+              </div>
+            </div>
+          </li>
+ -->
+          <li>
+            <div class="item-content">
+              <div class="item-media"><i class="icon icon-form-email"></i></div>
+              <div class="item-inner"> 
+                <div class="item-title label">E-mail</div>
+                <div class="item-input">
+                  <input type="email" name="email" placeholder="E-mail" id="player-email"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-media"><i class="icon icon-form-tel"></i></div>
+              <div class="item-inner"> 
+                <div class="item-title label">Phone</div>
+                <div class="item-input">
+                  <input type="tel" name="phone" placeholder="Phone" id="player-phone"/>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </form>
+      <div class="content-block">
+        <p><a href="#" class="button get-storage-data back link">Save Player Profile</a></p>
+      </div>
+      <div class="content-block">
+        <p><a id="player-deletecancel" href="#" class="button delete-storage-data back link">Delete Player</a></p>
+      </div>
+    </div>
+  </div>
+</div>

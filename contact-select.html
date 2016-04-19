@@ -1,0 +1,28 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+    <div class="center sliding">Select Contacts</div>
+    <div class="right"><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a></div>
+  </div>
+</div>
+<div class="pages">
+  <div data-page="contact-select" class="page">
+    <div class="page-content">
+      <div class="content-block row">
+        <div class="col-50"><a href="contact-text.html" class="button" disabled>Text</a></div>
+        <div class="col-50"><a href="contact-email.html" class="button">Email</a></div>
+      </div>
+      <div class="content-block">
+        <div class="buttons-row inset">
+          <a href="#" onclick="ContactWho(this.id)" id="contact-select-none" class="button button-raised">None</a>
+          <a href="#" onclick="ContactWho(this.id)" id="contact-select-all"  class="button button-raised button-fill">All</a>
+        </div>
+      </div>
+      <div class="content-block-title">Players</div>
+      <div class="list-block inset">
+        <ul id="contact-roster-select">
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

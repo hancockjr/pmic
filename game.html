@@ -1,0 +1,67 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left sliding"><a href="#" class="back link"><i class="icon icon-back"></i><span>Select</span></a></div>
+    <div class="center sliding">Game</div>
+    <div class="right"><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a></div>
+  </div>
+</div>
+<div class="pages">
+  <div data-page="game" class="page bg-black">
+    <div class="page-content">
+      <!--<div class="content-block-title">Clock</div>-->
+      <div class="content-block row"><!-- theme-orange -->
+        <canvas id="display-clock" width="120" height="34" class="col-30 bg-black">Your browser is not supported.</canvas>
+        <div class="col-5"></div>
+        <img class="col-20 button" src="img/icons8/Rewind-64.png" onclick="clock.Rewind()">
+        <div class="col-5"></div>
+        <img class="col-20 button" src="img/icons8/Play-64.png" onclick="clock.Play()" id="game-pause-play">
+        <div class="col-5"></div>
+        <img class="col-20 button" src="img/icons8/Fast-Forward-64.png" onclick="clock.FastFwd()">
+        <div class="col-5"></div>
+      </div>
+      <!--<div class="content-block-title">Swap Mode</div>-->
+      <div class="content-block">
+        <div class="buttons-row inset">
+          <a href="#" onclick="GameSwapMode(this.id)" id="game-cycle"  class="button button-raised button-fill">Cycle</a>
+          <a href="#" onclick="GameSwapMode(this.id)" id="game-manual" class="button button-raised">Manual</a>
+        </div>
+      <!--</div>-->
+      <!--<div class="content-block-title">Game</div>-->
+        <div class="content-block row">
+        <!--<div class="content-block-inner row bg-black">-->
+          <div class="col-50">
+            <a href="#" class="button border-black"><canvas id="display-out" width="60" height="17" class="bg-black">Your browser is not supported.</canvas></a>
+            <div id="game-Bench">
+            </div>
+            <div class="row no-gutter">
+              <div class="col-auto"></div>
+              <img class="col-auto button color-red" src="img/icons8/Plus-Math-50-Red.png" onclick="">
+              <div class="col-auto"></div>
+            </div>
+          </div>
+          <div class="col-50">
+            <a href="#" class="button border-black"><canvas id="display-in" width="60" height="17" class="bg-black">Your browser is not supported.</canvas></a>
+            <div id="game-InGame">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-block row">
+        <div class="col-5"></div>
+        <div class="col-40"><a href="#" class="button button-fill" onclick="GameUndo()">UNDO</a></div>
+        <div class="col-5"></div>
+        <div class="col-5"></div>
+        <div class="col-40"><a href="#" class="button button-fill" onclick="GameSub()">SUB</a></div>
+        <div class="col-5"></div>
+      </div>
+      <div class="content-block row">
+        <div class="col-5"></div>
+        <div class="col-40"><a href="#" class="button button-fill" onclick="gBench.Skip()">SKIP</a></div>
+        <div class="col-5"></div>
+        <div class="col-5"></div>
+        <div class="col-40"><a href="#" class="button button-fill" onclick="gInGame.Skip()">SKIP</a></div>
+        <div class="col-5"></div>
+      </div>
+    </div>
+  </div>
+</div>
